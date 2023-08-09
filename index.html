@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/TweenLite.min.js"></script>
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<link rel="shortcut icon" href="/imgs/favicon.png">
+<title>Zune Stuff</title>
+<style>
+	@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+body{
+	margin:0;
+	background-color:#369;
+	overflow:auto;
+}
+
+#btn1{
+	background:pink;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	left:900px;
+	cursor:pointer;
+
+	color:#FFF;
+	font-size:25px;
+	font-family: 'Segoe UI', sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+
+
+}
+#btn2{
+	background:black;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	left:900px;
+	cursor:pointer;
+
+	color:#FFF;
+	font-size:25px;
+	font-family: 'Segoe UI', sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+
+#btn3{
+	background:#F60;
+	border-color:#F60;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	left:900px;
+	cursor:pointer;
+
+	color:#FFF;
+	font-size:25px;
+	font-family: 'Segoe UI', sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+
+#btn4{
+	background: linear-gradient(to right, #fe5000, #d6006c);
+	border-color:#F60;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	margin-top:30px;
+	left:900px;
+	cursor:pointer;
+
+	color:#FFF;
+	font-size:25px;
+	font-family: 'Segoe UI', sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+#btn5{
+	background:rgb(255, 81, 0);
+	border-color:#F60;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	margin-top:30px;
+	left:900px;
+	cursor:pointer;
+
+	color:#FFF;
+	font-size:25px;
+	font-family: 'Segoe UI', sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+
+#btn6{
+	background:#6C0;
+	height:200px;
+	width:200px;
+	position:relative;
+	margin-left:10px;
+	margin-top:30px;
+	left:900px;
+	cursor:pointer;
+
+	color:#FFF;
+	font-size:25px;
+	font-family: 'Segoe UI', sans-serif;
+	line-height:300px;
+	padding-left:10px;
+	text-align:left;
+}
+
+#content{
+	background:#369;
+	height:480px;
+	width:750px;
+	position:relative;
+	top:500px;
+	z-index:0;
+}
+
+#backbutton{
+	position:relative;
+	left:760px;
+	cursor:pointer;
+}
+
+#caption{
+	position:relative;
+	top:-60px;
+
+	color:#FFF;
+	font-size:25px;
+	font-family: 'Segoe UI', sans-serif;
+}
+
+#pagecaption{
+	position:relative;
+	top:-60px;
+
+	color:#FFF;
+	font-size:25px;
+	font-family: 'Segoe UI', sans-serif;
+}
+</style>
+</head>
+
+<body link="#FFFFFF">
+<!--header-->
+<div style="width:100%; height:80px; overflow:hidden; margin: 0 auto; background-color:#333">
+
+  <div style="width:750px; height:80px; margin: 0 auto; overflow:hidden; position:relative">
+
+        <div id="caption" style="height:44px; margin-top:20px;float:left; margin-left:12px; position:absolute"> Zune Stuff </div>
+
+        <div id="backbutton" style="height:44px; width:44px; margin-top:15px; float:left; position:absolute"> <img src="imgs/backbtn.png" width="44" height="44" /> </div>
+
+       <div id="pagecaption" style="height:44px; margin-top:20px;float:left; margin-left:12px; position:absolute"> Caption </div>
+  </div>
+
+</div>
+
+<!--buttons-->
+<div style="width:750px; height:450px; overflow:hidden; margin: 0 auto; position:relative; margin-top:35px;">
+
+	<a href="1.html" target="main"><div id="btn1" style="float:left"> <p> Zune Archive </p> </div> </a>
+    <a href="2.html" target="main"><div id="btn2" style="float:left"> <p> Zune HD Wiki </p> </div> </a>
+    <a href="3.html" target="main"><div id="btn3" style="float:left"> <p> Useful Links </p> </div> </a>
+    <a href="4.html" target="main"><div id="btn4" style="float:left"> <p> Download Zune</p> </div> </a>
+    <a href="5.html" target="main"><div id="btn5" style="float:left"> <p> Zune Subreddit </p> </div> </a>
+    <a href="https://www.zuneupdate.com" target="main"><div id="btn6" style="float:left"> <p> Update your Zune </p> </div> </a>
+    <div id="content" style="position:absolute"> <iframe name="main" frameborder=0 height=450 width=750></iframe>  </div>
+
+</div>
+
+<!--footer-->
+<div style="width:100%; overflow:hidden; margin: 0 auto; background-color:#333; margin-top:20px;">
+    <p style="text-align:center; color:#FFF; font-family: 'Segoe UI', sans-serif; font-size:x-small">Website Made by DavidModPhone</a> &copy; 2023 All rights reserved.</p>
+    <p style="text-align:center; color:#CCC; font-family: 'Segoe UI', sans-serif; font-size:x-small"> Zune &#174; is a trademark of Microsoft &#174; All rights go to them</p>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  TweenLite.to($("#caption"),2,{css:{top:0},delay:1, ease:Power2.easeOut});
+  TweenLite.to($("#btn1"),2,{css:{left:0},delay:2, ease:Power2.easeOut});
+  TweenLite.to($("#btn2"),2,{css:{left:20},delay:2.5, ease:Power2.easeOut});
+  TweenLite.to($("#btn3"),2,{css:{left:40},delay:3, ease:Power2.easeOut});
+  TweenLite.to($("#btn4"),2,{css:{left:0},delay:3.5, ease:Power2.easeOut});
+  TweenLite.to($("#btn5"),2,{css:{left:20},delay:4, ease:Power2.easeOut});
+  TweenLite.to($("#btn6"),2,{css:{left:40},delay:4.5, ease:Power2.easeOut});
+
+  });
+
+
+  $("#btn1").click(function(){
+	  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	  $("#pagecaption").text("Zune Archive");
+
+  });
+
+  $("#btn2").click(function(){
+	  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	  $("#pagecaption").text("Zune HD Wiki");
+
+  });
+
+  $("#btn3").click(function(){
+	  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	  $("#pagecaption").text("Useful Links");
+
+  });
+
+  $("#btn4").click(function(){
+	  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	  $("#pagecaption").text("Download Zune");
+
+  });
+
+  $("#btn5").click(function(){
+	  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	  $("#pagecaption").text("Zune Subreddit");
+
+  });
+
+   $("#btn6").click(function(){
+	  TweenLite.to($("#content"),0.5,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#backbutton"),1,{css:{left:650, rotation:-180}, ease:Power2.easeOut});
+	  TweenLite.to($("#pagecaption"),1,{css:{top:0}, ease:Power2.easeOut});
+	  TweenLite.to($("#caption"),1,{css:{top:90}, ease:Power2.easeOut});
+	  $("#pagecaption").text("Update Your Zune");
+
+  });
+
+
+   $("#backbutton").click(function(){
+	    TweenLite.to($("#content"),1,{css:{top:500}, ease:Power2.easeIn});
+		TweenLite.to($("#backbutton"),1,{css:{left:760, rotation:0}, ease:Power2.easeIn});
+		TweenLite.to($("#pagecaption"),1,{css:{top:-60}, ease:Power2.easeOut});
+		TweenLite.to($("#caption"),1,{css:{top:0}, ease:Power2.easeOut});
+	});
+</script>
+
+</body>
+</html>
